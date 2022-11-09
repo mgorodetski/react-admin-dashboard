@@ -13,7 +13,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const Topbar = () => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.colors);
+  const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
 
   return (
@@ -29,7 +29,7 @@ const Topbar = () => {
       {/* Icons */}
       <Box display="flex">
         <IconButton onClick={colorMode.toggleColorMode}>
-          {theme.palette.mode = 'dark' ? <DarkModeOutlinedIcon /> : <LightModeOutlinedIcon />}
+          {theme.palette.mode === 'dark' ? <DarkModeOutlinedIcon /> : <LightModeOutlinedIcon />}
         </IconButton>
         <IconButton>
           <NotificationsOutlinedIcon />
