@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
-
+import Topbar from './scenes/global/Topbar'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <CssBaseline />
         <div className="app">
           <main className="content">
-            Works!
+            <Topbar />
           </main>
         </div>
       </ThemeProvider>
